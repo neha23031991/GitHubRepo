@@ -1,1 +1,16 @@
+# Syntax: pattern @username or @teamname
+    # Example to set code owners:
+
+    # Default owner for all files in the repository
+    * @your-username
+
+    # Frontend team owns all HTML and CSS files
+    *.html @frontend-team
+    *.css @frontend-team
+
+    # Backend team owns all files within the 'scripts/' directory
+    /scripts/ @backend-team
+
+    # Specific file ownership
+    src/main.js @js-owner
 
